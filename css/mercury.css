@@ -94,8 +94,8 @@ spin{
     border: 2px solid var(--TextDark100);
     border-radius: 50%;
     border-top: 2px solid var(--TextDark900);
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     -webkit-animation: spin .4s linear infinite; /* Safari */
     animation: spin .4s linear infinite;
   }
