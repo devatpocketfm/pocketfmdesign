@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+*{font-family: 'Inter', sans-serif;}
+
+ :root {
+    --Text900: #0d1536;
+    --Text700: rgba(13, 21, 54, 0.8);
+    --Text500: rgba(13, 21, 54, 0.65);
+    --Text300: rgba(13, 21, 54, 0.4);
+    --Text100: rgba(13, 21, 54, 0.3);
+    --TextDark900: rgba(255, 255, 255, 1);
+    --TextDark700: rgba(255, 255, 255, 0.9);
+    --TextDark500: rgba(255, 255, 255, 0.8);
+    --TextDark300: rgba(255, 255, 255, 0.6);
+    --TextDark100: rgba(255, 255, 255, 0.5);
+    --Dove: #ffffff;
+    --Grey100: #f6f7f9;
+    --Grey300: #f0f1f5;
+    --Grey500: #ebecf1;
+    --Grey800: #e6e7ee;
+    --Grey900: #e0e2eb;
+    --Raven: #181b25;
+    --DarkGrey100: #14161f;
+    --DarkGrey300: #101218;
+    --DarkGrey500: #0c0d12;
+    --DarkGrey800: #08090c;
+    --DarkGrey900: #040406;
+    --Crimson500: #e51a4d;
+    --Crimson300: #f7737b;
+    --Crimson800: #a40d50;
+    --Fjord500: #a4a9c1;
+    --Fjord300: #d2d4e0;
+    --Fjord800: #677098;
+    --FjordDark300: #35394b;
+    --FjordDark500: #4a5068;
+    --FjordDark800: #8289a6;
+    --Azure500: #068ae2;
+    --Azure300: #66cdf6;
+    --Azure800: #0350a2;
+    --Corn500: #f2c602;
+    --Corn300: #fbe565;
+    --Corn800: #ae8701;
+    --Punch500: #dd3623;
+    --Punch100: #f49979;
+    --Punch800: #9f111a;
+    --Lime500: #79ba10;
+    --Lime100: #c3ea69;
+    --Lime800: #4b8508;
+
+    --GreyLight :#D1D1D1;
+  }
+body{
+    background-color: var(--Grey300);
+}
+
+  body{
+      max-width:411px;
+      margin:0 auto;
+  }
+  a{
+      margin-top:48px;
+  }
+
+  .primary-crimson-button {
+      background-color: var(--Crimson500);
+      color:var(--TextDark900);
+      width: 100%;
+      display: block;
+      line-height: 48px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color .1s ease-in-out;
+  }
+  .primary-crimson-button:hover{
+    background-color: var(--Crimson300);
+  }
+  .primary-crimson-button:active{
+    background-color: var(--Crimson800);    
+  }
+  .primary-crimson-button:focus-visible{
+    box-shadow: 0px 0px 0px 2px var(--Crimson300);    
+  }
+
+spin{
+    margin-bottom:-4px;
+    margin-left: 8px;
+    display: inline-block;
+}
+  .spinner{
+    
+    border: 2px solid var(--TextDark100);
+    border-radius: 50%;
+    border-top: 2px solid var(--TextDark900);
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin .4s linear infinite; /* Safari */
+    animation: spin .4s linear infinite;
+  }
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
+
+.secondary-crimson-button {
+    box-sizing: border-box;
+    border: 2px solid var(--Crimson500);
+    color:var(--Crimson500);
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color .1s ease-in-out;
+}
+.secondary-crimson-button:hover{
+    background: rgba(229, 26, 77, 0.1);
+}
+.secondary-crimson-button:active{
+    background: rgba(229, 26, 77, 0.2);
+}
+.secondary-crimson-button:focus-visible{
+  box-shadow: 0px 0px 0px 2px var(--Crimson300);    
+}
+
+
+
+.tertiary-crimson-button {
+    color:var(--Crimson500);
+    box-sizing: border-box;
+    border:2px solid transparent;
+    background-color: rgba(229, 26, 77, 0.1);
+    width: 100%;
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color .1s ease-in-out;
+}
+.tertiary-crimson-button:hover{
+    background: rgba(229, 26, 77, 0.1);
+    border: 2px solid  rgba(229, 26, 77, 0.2);
+}
+.tertiary-crimson-button:active{
+    background: rgba(229, 26, 77, 0.2);
+}
+.tertiary-crimson-button:focus-visible{
+  box-shadow: 0px 0px 0px 2px var(--Crimson300);    
+}
+
+
+
+
+.alt-button {
+    color:var(--Text500);
+    box-sizing: border-box;
+    border:2px solid transparent;
+    background-color: var(--Grey900);
+    width: 100%;
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color .1s ease-in-out;
+}
+.alt-button:hover{
+    background-color: var(--Grey900);
+    border: 2px solid  var(--Text100);
+}
+.alt-button:active{
+    background-color: var(--Text100);
+}
+.alt-button:focus-visible{
+  box-shadow: 0px 0px 0px 2px var(--Text100);    
+}
+
+
+.disabled-button{
+    color:var(--Text100);
+    box-sizing: border-box;
+    border:2px solid transparent;
+    background-color: var(--GreyLight);
+    width: 100%;
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
